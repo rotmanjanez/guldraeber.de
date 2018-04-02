@@ -1,7 +1,9 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 3.7.3"
-group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.6"
-end
+gem "jekyll-feed", "~> 0.6"
+gem 'kramdown', '~> 1.16.2 '
+gem 'therubyracer', '~> 0.12.2'
+gem 'rake', '~> 11.3.0'
+gem 's3_website', '~> 2.16.0'
 
