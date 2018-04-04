@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Das Guldräberspiel
-permalink: /spiel/
+permalink: /spiel.html
 ---
 
 Das offizielle **Guldräberspiel** verspricht Spiel und Spaß für die ganze Familie.
