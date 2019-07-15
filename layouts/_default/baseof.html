@@ -11,5 +11,9 @@
     {{ block "main" . }}{{ end }}
     </main>
     {{ partial "footer.html" . }}
+    {{ range .Params.scripts }}
+    {{ $script := resources.Get . | resources.Minify }}
+    <script src="{{ $script.Permalink }}"></script>
+    {{ end }}
 </body>
 </html>
