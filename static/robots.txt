@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://ohomburg.de/sitemap.xml

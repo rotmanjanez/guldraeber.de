@@ -1,0 +1,37 @@
+@import "main";
+
+section, main {
+  max-width: 700px;
+  margin: 1em auto;
+  padding: 0 1em;
+}
+
+footer {
+  max-width: 700px;
+  margin: 10rem auto 1em;
+  padding: 0 1em;
+  font-size: 16px;
+  color: black;
+}
+
+@keyframes shake {
+  10%, 70% {
+    transform: translate3d(-1px, 1px, 0);
+  }
+
+  20%, 50% {
+    transform: translate3d(1px, 2px, 0);
+  }
+
+  30%, 90% {
+    transform: translate3d(-1px, -1px, 0);
+  }
+
+  40%, 80% {
+    transform: translate3d(2px, -1px, 0);
+  }
+
+  60% {
+    transform: translate3d(0, 2px, 0);
+  }
+}

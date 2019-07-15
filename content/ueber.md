@@ -1,7 +1,6 @@
 ---
-layout: page
 title: Über die Guldräber
-permalink: /ueber.html
+menu: "main"
 ---
 
 ## Visionäre. Erfinder. Entdecker.

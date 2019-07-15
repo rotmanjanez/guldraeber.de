@@ -1,0 +1,11 @@
+baseURL = "https://ohomburg.de/"
+languageCode = "de-de"
+defaultContentLanguage = "de"
+title = "Oskar Homburg"
+enableGitInfo = true
+uglyurls = true
+
+[[menu.main]]
+identifier = "test"
+name = "Der Guldräbertest"
+url = "/test.html"

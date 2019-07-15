@@ -1,0 +1,10 @@
+<meta charset="UTF-8">
+<link rel="canonical" href="{{ .Permalink }}">
+<title>{{ .Title }}</title>
+<link rel="stylesheet" href="/css/normalize.css">
+{{ range .Params.styles }}
+{{ $style := resources.Get . | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+{{ end }}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="/js/B.js"></script>

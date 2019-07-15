@@ -1,16 +1,15 @@
 ---
-layout: page
 title: Das Guldräberspiel
-permalink: /spiel.html
+menu: "main"
 ---
 
 Das offizielle **Guldräberspiel** verspricht Spiel und Spaß für die ganze Familie.
-Egal ob jung und alt, mit diesem kalorienarmen kaiserlichen keimfreien kernigen kindgerechten Kartensoiel
+Egal ob jung und alt, mit diesem kalorienarmen kaiserlichen keimfreien kernigen kindgerechten Kartenspiel
 bliebt granitiert kein Auge auf dem Trockenen! Mit nur fünf Regeln ist es außerdem
-kinderleicht zu lernen! 2017 gewann das Guldräberspiel den offiziellen Guldräberpreis in der Kategorie
-"Bestes Spiel".
+kinderleicht zu lernen! Im Jahr 2019 gewann das Guldräberspiel zum dritten Mal in Folge den offiziellen
+Guldräberpreis in den Kategorien "Bestes Spiel" und "Bester Soundtrack".
 
-Das spiel ist kinderleicht zu lernen und bietet eine einzigartige Erfahrung, wie kein anderes Spiel.
+Das Spiel ist kinderleicht zu lernen und bietet eine einzigartige Erfahrung, wie kein anderes Spiel.
 Die Spielmechaniken wurden speziell designed, um den Spaß für alle Teilnehmer zu maximieren.
 Nach den ersten paar Runden zum Reinkommen werdet ihr merken, wie die Regeln und Spieler
 auf komplexe Art und Weise interagieren, und könnt eigene Strategien entwickeln,
@@ -26,7 +25,7 @@ Das **offizielle Guldräber-Kartendeck** wird bald&trade; im Handel verfügbar s
 
 * Zwei bis 13 Spieler von 6 bis 88 Jahren
 * Ein Kartenspiel mit 52 oder mehr Karten
-* Ca. zwei Minuten zeit pro Runde
+* Ca. zwei Minuten Zeit pro Runde
 
 ### Wie man spielt
 
@@ -51,6 +50,3 @@ was wir mit den Karten machen sollten.
 
 > Ich habe keinen Bock hier irgendwelche Kommentare abzugeben.  
 -- <cite>Timm Wahrscheinlich</cite>
-
-
-

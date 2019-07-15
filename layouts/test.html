@@ -1,9 +1,9 @@
----
-layout: default
-permalink: /test.html
-title: "Der Guldräbertest"
----
-
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+    {{ partial "head.html" . }}
+    {{ $style := resources.Get "index.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
 <style>
 .resp-sharing-button__link,
 .resp-sharing-button__icon {
@@ -138,8 +138,10 @@ title: "Der Guldräbertest"
 #preresult button {
   width: 11em; }
 </style>
+</head>
 
-<header><h1>Der Guldräbertest</h1></header>
+<body>
+{{ partial "header" . }}
 
 <section><p>Hier findest du den <strong>ultimativen Guldräbertest</strong>, der mit Hilfe eines
     deterministischen, dermatologisch getesteten Verfahrens prüft, ob <strong>du</strong> ein Guldräber
@@ -346,3 +348,5 @@ title: "Der Guldräbertest"
     });
 })();
 </script>
+</body>
+</html>
