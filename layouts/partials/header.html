@@ -1,12 +1,14 @@
-<nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        {{ range .Site.Menus.main }}
-        <li><a href="{{ .URL }}"><span>{{ .Name }}</span></a></li>
-        {{ end }}
-    </ul>
-</nav>
 <header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            {{ range .Site.Menus.main }}
+            <li><a href="{{ .URL }}"><span>{{ .Name }}</span></a></li>
+            {{ end }}
+        </ul>
+    </nav>
     <h1>{{ .Title }}</h1>
-    <small><a href="https://github.com/ohomburg/ohomburg.de/edit/master/content/{{ .File.Path }}">Edit on GitHub</a></small>
+    {{ with .File.Path }}
+    <small><a href="https://github.com/ohomburg/guldraeber.de/edit/master/content/{{ . }}">Edit on GitHub</a></small>
+    {{ end }}
 </header>

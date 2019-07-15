@@ -1,7 +1,7 @@
-baseURL = "https://ohomburg.de/"
+baseURL = "https://guldraeber.de/"
 languageCode = "de-de"
 defaultContentLanguage = "de"
-title = "Oskar Homburg"
+title = "Guldräber"
 enableGitInfo = true
 uglyurls = true
 

@@ -1,18 +1,23 @@
-language: ruby
+language: c
+dist: xenial
+addons:
+  snaps:
+  - name: hugo
+    channel: extended
 branches:
   only: master
-script: bundle exec rake deploy
-cache: bundler
+script: hugo
 before_deploy:
-- openssl aes-256-cbc -K $encrypted_eec2211ba44d_key -iv $encrypted_eec2211ba44d_iv
+- openssl aes-256-cbc -K $encrypted_e64e26c049ef_key -iv $encrypted_e64e26c049ef_iv
   -in deploy_rsa.enc -out /tmp/deploy_rsa -d
 - eval "$(ssh-agent -s)"
 - chmod 600 /tmp/deploy\_rsa
 - ssh-add /tmp/deploy\_rsa
+- echo "$DEPLOY_HOST_KEY" >> $HOME/.ssh/known_hosts
 deploy:
 - provider: script
   skip_cleanup: true
-  script: echo "$DEPLOY_HOST_KEY" >> $HOME/.ssh/known_hosts && rsync -r --quiet --delete-after _site/* $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_DIRECTORY
+  script: bash deploy.sh
   on:
     repo: ohomburg/guldraeber.de
 env:

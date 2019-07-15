@@ -30,9 +30,12 @@ body {
 
 nav {
   text-align: center;
-  width: 100%;
+  width: 100vw;
+  margin-left: -2em;
+  margin-top: -1em;
+  background: rgba(black, 0.3);
+  background: linear-gradient(to bottom, rgba(black, 0.4), rgba(black, 0));
   height: auto;
-  background: black;
   ul {
       display: inline-block;
       list-style: none;
@@ -45,33 +48,45 @@ nav {
   }
   a {
       text-decoration: none;
-      color: #ddd;
+      color: white;
   }
 }
 
 header {
   width: 100%;
-  background: linear-gradient(110deg, #e50000, #e50000 16.67%, #ff8d00 16.67%, #ff8d00 33.33%, #fe0 33.33%, #fe0 50%, #008121 50%, #008121 66.67%, #004cff 66.67%, #004cff 83.33%, #760188 83.33%, #760188) fixed;
+  background: linear-gradient(110deg, #e50000, #e50000 16.67%, #ff8d00 16.67%, #ff8d00 33.33%, #fe0 33.33%, #fe0 50%, #008121 50%, #008121 66.67%, #004cff 66.67%, #004cff 83.33%, #760188 83.33%, #760188);
   color: white;
   padding: 1em;
   box-sizing: border-box;
   h1 {
-      font-weight: 300;
-      font-size: 3em;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+    font-size: 4em;
+    text-align: center;
+  }
+  small {
+    text-align: right;
+    float: right;
+    a {
+      color: white;
+    }
   }
 }
 
 .list-article {
-  border: 1px solid #eee;
   margin: 1em 0;
-  border-radius: 1em;
-  padding: 0 1em;
+  padding-left: 1em;
   header {
       padding: 0;
       background: white;
       color: black;
       h3 {
           margin-bottom: 0;
+          margin-top: 0.1em;
+          font-weight: normal;
+          font-size: 1.2em;
       }
       a {
           color: #001087;
@@ -82,6 +97,31 @@ header {
           font-size: x-small;
       }
   }
+
+  transition: all 0.1s ease;
+  &:hover {
+    border-left-width: 10px !important;
+    margin-left: -8px;
+  }
+
+  &:nth-child(6n+1) {
+    border-left: 2px solid #e50000;
+  }
+  &:nth-child(6n+2) {
+    border-left: 2px solid #ff8d00;
+  }
+  &:nth-child(6n+3) {
+    border-left: 2px solid #fe0;
+  }
+  &:nth-child(6n+4) {
+    border-left: 2px solid #008121;
+  }
+  &:nth-child(6n+5) {
+    border-left: 2px solid #004cff;
+  }
+  &:nth-child(6n+6) {
+    border-left: 2px solid #760188;
+  }
 }
 
 section {
@@ -89,6 +129,10 @@ section {
   max-width: 1200px;
   box-sizing: content-box;
   padding: 0 1em;
+}
+
+main {
+  flex-grow: 1;
 }
 
 footer {
