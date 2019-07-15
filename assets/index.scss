@@ -6,14 +6,6 @@ section, main {
   padding: 0 1em;
 }
 
-footer {
-  max-width: 700px;
-  margin: 10rem auto 1em;
-  padding: 0 1em;
-  font-size: 16px;
-  color: black;
-}
-
 @keyframes shake {
   10%, 70% {
     transform: translate3d(-1px, 1px, 0);
