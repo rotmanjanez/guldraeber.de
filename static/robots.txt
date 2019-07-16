@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://ohomburg.de/sitemap.xml
+Sitemap: https://guldraeber.de/sitemap.xml
