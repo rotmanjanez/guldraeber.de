@@ -4,6 +4,7 @@ defaultContentLanguage = "de"
 title = "Guldräber"
 enableGitInfo = true
 uglyurls = true
+enableEmoji = true
 
 [[menu.main]]
 identifier = "test"
