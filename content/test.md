@@ -1,5 +1,5 @@
 ---
-title: "Das Guldräberspiel"
+title: "Der Guldräbertest"
 styles: ["test.scss"]
 scripts: ["test.js"]
 ---
