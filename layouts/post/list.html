@@ -1,0 +1,15 @@
+{{ define "main" }}
+{{ .Content }}
+{{ range .Pages }}
+<article class="list-article">
+    <header>
+        <a href="{{ .Permalink }}"><h3>{{ .Title }}</h3></a>
+        {{ with .Date }}
+        <span class="article-ts">Vom <time datetime="{{ .Format "2006-01-02" }}">
+            {{ .Format "2. January 2006" }}</time></span>
+        {{ end }}
+    </header>
+    {{ .Summary }}
+</article>
+{{ end }}
+{{ end }}
