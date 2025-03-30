@@ -2,7 +2,7 @@
 <html lang="{{ .Params.lang | default .Site.Language.Lang }}">
 <head>
     {{ partial "head.html" . }}
-    {{ $style := resources.Get "index.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    {{ $style := resources.Get "index.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 </head>
 <body>
